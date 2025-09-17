@@ -22,6 +22,8 @@ jobs:
         with:
           rsolvApiKey: rsolv_f65acvz-xwVfGTje2CIXs2nVN0ZDUZ8ntwn10MlaPCE
           mode: full
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload Security Report
         if: always()
